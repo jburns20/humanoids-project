@@ -1,0 +1,3 @@
+[submodule "pixy"]
+	path = pixy
+	url = https://github.com/charmedlabs/pixy.git
