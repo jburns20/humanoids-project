@@ -19,12 +19,17 @@ int main() {
     }
  
     //unconditional loop
+    int count = 0;
     while (true) {
         Mat cameraFrame;
         stream1.read(cameraFrame);
         imshow("cam", cameraFrame);
         if (waitKey(30) >= 0)
             break;
+        count++;
+        if (count % 100 == 0) {
+            printf("processed %d frames\n", count);
+        }
     }
     return 0;
 }

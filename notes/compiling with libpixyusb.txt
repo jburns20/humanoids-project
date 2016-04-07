@@ -1,0 +1,7 @@
+You need to install libpixyusb using the scripts/install_libpixyusb.sh script
+in the pixy repository before compiling pixy code
+
+
+You should make sure the following line is at the beginning of CMakeLists.txt
+to fix the issues with compiling stuff in the pixy repository:
+CMAKE_POLICY( SET CMP0003 OLD )
